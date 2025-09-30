@@ -213,7 +213,7 @@ const todosGN = async(req, res) => {
     //Hacemos la consulta
     try {
         
-        const listGn = await GenericoModel
+        const listGN = await GenericoModel
         .find()
         .sort({name: "asc"})
         .exec();
@@ -222,7 +222,7 @@ const todosGN = async(req, res) => {
         let total = await GenericoModel.find();
 
         //Comprobamos y respondemos
-        if (!listGn) {
+        if (!listGN) {
             return res.status(400).send({
                 status: "error",
                 message: "Error en la consulta"
@@ -231,7 +231,7 @@ const todosGN = async(req, res) => {
         } else {
             return res.status(200).send({
                 status: "success",
-                listGn,
+                listGN,
                 total: total.length,
             });
         }
@@ -253,6 +253,6 @@ module.exports = {
     nuevoGN,
     borrarGN,
     editarGN,
-    listGn
+    listGN
 
 }
