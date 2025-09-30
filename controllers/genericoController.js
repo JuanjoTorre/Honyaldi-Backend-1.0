@@ -253,6 +253,6 @@ module.exports = {
     nuevoGN,
     borrarGN,
     editarGN,
-    todosGN
+    listGn
 
 }
