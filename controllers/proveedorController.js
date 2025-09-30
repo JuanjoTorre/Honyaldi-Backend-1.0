@@ -174,8 +174,6 @@ const editarProv = async (req, res) => {
 **************************************/
 const todosProv = async(req, res) => {
 
-
-
     //Hacemos la consulta
     try {
         
