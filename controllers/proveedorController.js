@@ -205,7 +205,7 @@ const todosProv = async(req, res) => {
     } catch (error) {
         return res.status(400).send({
             status: "error",
-            message: "Error general"
+            message: error
         });
     }
 

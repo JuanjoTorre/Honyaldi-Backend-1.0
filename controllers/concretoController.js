@@ -218,7 +218,7 @@ const todosCR = async(req, res) => {
         
         const todosCR = await ConcretoModel
         .find()
-        .sort({nombre: "asc"})
+        .sort({name: "asc"})
         .exec();
 
         //Calculamos el numero de concretos

@@ -18,7 +18,7 @@ router.delete("/borrarProveedor/:id", ProveedorController.borrarProv);
 //Ruta de edicion de proveedor
 router.put("/editarProveedor/:id", ProveedorController.editarProv);
 //Ruta de listado  de todos los proveedores
-router.get("/listadoProveedores", ProveedorController.todosProv);
+router.get("/listarProveedor", ProveedorController.todosProv);
 
 
 

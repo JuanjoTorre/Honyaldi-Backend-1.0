@@ -215,7 +215,7 @@ const todosGN = async(req, res) => {
         
         const todosGN = await GenericoModel
         .find()
-        .sort({nombre: "asc"})
+        .sort({name: "asc"})
         .exec();
 
         //Calculamos el numero de tipos de producto

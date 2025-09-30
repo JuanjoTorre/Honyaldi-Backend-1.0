@@ -130,8 +130,7 @@ const editarGR = async (req, res) => {
     //Conseguimos los nuevos datos del grupo restringido
     const grToEdit = req.body; 
 
-    console.log(grId);
-    console.log(grToEdit);
+
 
     //Validamos los datos que recibimos
     try {

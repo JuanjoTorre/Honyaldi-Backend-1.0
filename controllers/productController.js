@@ -225,7 +225,7 @@ const todosProducts = async (req, res) => {
 const listarProductosProveedor = async (req, res) => {
 	//Recogemos el proveedor del filtro
 	const prov = req.params.name;
-	console.log(prov);
+
 
 	//Hacemos la consulta
 	try {

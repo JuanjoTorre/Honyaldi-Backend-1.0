@@ -42,7 +42,7 @@ const nuevoDG = async (req, res) => {
 
     //Control  de Dirigido a duplicados
     try {
-        const dg = await DirigidoAModel.find({nombre: params.nombre}).exec();
+        const dg = await DirigidoAModel.find({name: params.name}).exec();
 
         //Si la consulta es ok pero el dirigido A ya existe
         if(dg && dg.length >=1){
@@ -159,7 +159,7 @@ const editarDG = async (req, res) => {
         else{
             return res.status(200).send({
                 status: "success",
-                message: `El Dirigido A ${dgActualizado.nombre} ha sido actualizado con exito`
+                message: `El Dirigido A ${dgActualizado.name} ha sido actualizado con exito`
     
             });
         }
@@ -185,7 +185,7 @@ const listarDG = async(req, res) => {
         
         const dgList = await DirigidoAModel
         .find()
-        .sort({nombre: "asc"})
+        .sort({name: "asc"})
         .exec();
 
         //Obtenemos el total de Dirigido a

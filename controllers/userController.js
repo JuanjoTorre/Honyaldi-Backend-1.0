@@ -68,7 +68,7 @@ const nuevoUser = async( req, res ) => {
 const login = async(req, res) => {
     //Recogemos los parametros que nos lleguen del body
     let params = req.body;
-    console.log(params)
+
 
 
     if(!params.name || !params.password){
