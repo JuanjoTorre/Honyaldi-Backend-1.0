@@ -83,4 +83,4 @@
  //Este modelo se va a llamar "ProductModel"
 //El schema que va a usar este modelo es "ProductSchema"
 //Y se va a guardar en la coleccion "products"
-module.exports = model("ProductModel", ProductSchema, "products");
+module.exports = model("ProductModel", ProductSchema, "productos");
