@@ -20,6 +20,7 @@ const nuevoProduct = async (req, res) => {
 	let params = req.body;
 	params.imagen = params.codigo + ".jpg";
 	params.pdf = params.codigo + ".pdf";
+	console.log(params.codigo)
 
 	//Validar los datos
 	try {
