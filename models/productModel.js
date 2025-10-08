@@ -14,7 +14,7 @@
         required: true
     },
     codigo: {
-        type: Int32,
+        type: String,
         required: true,
         unique:true
     },
