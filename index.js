@@ -54,6 +54,7 @@ const ProveedorRoutes = require("./routes/proveedorRoute");
 const GenericoRoutes = require("./routes/genericoRoutes");
 const ConcretoRoutes = require("./routes/concretoRoutes");
 const UserRoutes = require("./routes/userRoute");
+const path = require("path");
 
 
 
@@ -69,7 +70,9 @@ app.use("/api/generico", GenericoRoutes);
 app.use("/api/concreto", ConcretoRoutes);
 app.use("/api/user", UserRoutes);
 
-
+app.use('*', (req, res) => {
+      res.sendFile(path.join(__dirname, 'public/index.html'));
+});
 
 //Ruta de prueba
 // app.get("/ruta-prueba", (req, res) => {
