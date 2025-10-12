@@ -10,7 +10,7 @@ const connection  = require("./database/connection");
 const express = require("express");
 const cors = require("cors");
 require('dotenv').config();
-
+const path = require("path");/*  */
 
 
 /*****************************************MENSAJE DE BIENVENIDA
@@ -54,7 +54,7 @@ const ProveedorRoutes = require("./routes/proveedorRoute");
 const GenericoRoutes = require("./routes/genericoRoutes");
 const ConcretoRoutes = require("./routes/concretoRoutes");
 const UserRoutes = require("./routes/userRoute");
-const path = require("path");
+
 
 
 
