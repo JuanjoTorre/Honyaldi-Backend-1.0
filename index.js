@@ -10,7 +10,7 @@ const connection  = require("./database/connection");
 const express = require("express");
 const cors = require("cors");
 require('dotenv').config();
-const path = require("path");/*  */
+const path = require("path");
 
 
 /*****************************************MENSAJE DE BIENVENIDA
@@ -70,8 +70,8 @@ app.use("/api/generico", GenericoRoutes);
 app.use("/api/concreto", ConcretoRoutes);
 app.use("/api/user", UserRoutes);
 
-app.use('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'public/index.html'));
+app.use( "*", (req, res) => {
+      res.sendFile(path.join( __dirname, 'public/index.html'));
 });
 
 //Ruta de prueba
