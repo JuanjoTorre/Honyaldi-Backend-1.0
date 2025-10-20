@@ -70,9 +70,9 @@ app.use("/api/generico", GenericoRoutes);
 app.use("/api/concreto", ConcretoRoutes);
 app.use("/api/user", UserRoutes);
 
-// app.use( "*", (req, res) => {
-//       res.sendFile(path.join( __dirname, 'public/index.html'));
-// });
+app.use( "/{*splat}", (req, res) => {
+      res.sendFile(path.join( __dirname, 'public/index.html'));
+});
 
 //Ruta de prueba
 // app.get("/ruta-prueba", (req, res) => {
